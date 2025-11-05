@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Trip | JourneyGenius</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="flight-takeoff-fill.png" />
+    <style>
+      :root {
+        --primary-color: #2887ff;
+        --primary-color-dark: #2476da;
+        --text-dark: #0a0a0a;
+        --text-light: #737373;
+        --extra-light: #f3f4f6;
+        --white: #ffffff;
+        --max-width: 1200px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: var(--extra-light);
+        color: var(--gray-dark);
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 2rem;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 3rem auto;
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .container h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: var(--primary-color);
+      }
+
+      form label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+
+      form input,
+      form select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+      }
+
+      form button {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+      }
+
+      form button:hover {
+        background-color: var(--primary-color-dark);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        .container {
+          margin: 1rem;
+          padding: 1.5rem;
+        }
+      }
+
+      body {
+        opacity: 0;
+        animation: pageFade 1.5s ease forwards;
+      }
+      @keyframes pageFade {
+        to {
+          opacity: 1;
+        }
+      }
+
+      .container {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        transition: 0.5s ease;
+      }
+      button {
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+      }
+
+      input:focus,
+      select:focus {
+        border-color: var(--primary-color-dark);
+        box-shadow: 0 0 10px var(--primary-color);
+        transition: box-shadow 0.5s ease, border-color 0.5s ease;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        z-index: -1;
+      }
+
+      .home-icon {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-size: 2rem;
+        color: var(--white);
+        background-color: transparent; /* Remove background */
+        padding: 0; /* Remove padding */
+        text-decoration: none;
+        box-shadow: none; /* Remove shadow */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        z-index: 1000;
+        border-radius: 0; /* Remove rounding */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="home-icon" aria-label="Return to homepage">
+      <i class="ri-flight-takeoff-line"></i>
+    </a>
+
+    <header>
+      <h1>Book Your Dream Trip</h1>
+      <p>Plan your next adventure with JourneyGenius</p>
+    </header>
+
+    <div class="container">
+      <h2>Trip Details</h2>
+      <form>
+        <label for="destination">Destination</label>
+        <input
+          type="text"
+          id="destination"
+          placeholder="e.g. Paris, Bali, Tokyo"
+          required
+        />
+
+        <label for="checkin">Check-In Date</label>
+        <input type="date" id="checkin" required />
+
+        <label for="checkout">Check-Out Date</label>
+        <input type="date" id="checkout" required />
+
+        <label for="travelers">Number of Travelers</label>
+        <input type="number" id="travelers" min="1" value="1" required />
+
+        <label for="hotel">Hotel Preference</label>
+        <select id="hotel">
+          <option value="">Any</option>
+          <option value="budget">Budget</option>
+          <option value="midrange">Mid-Range</option>
+          <option value="luxury">Luxury</option>
+        </select>
+
+        <label for="activities">Preferred Activities</label>
+        <input
+          type="text"
+          id="activities"
+          placeholder="e.g. hiking, museums, beach"
+        />
+
+        <a href="index.html"><button type="submit">Search Trips</button></a>
+      </form>
+    </div>
+
+    <footer>
+      &copy; 2025 JourneyGenius. All rights reserved.
+      <div>Made by: Bhagya Patel</div>
+    </footer>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script
+      src="https://files.bpcontent.cloud/2025/11/05/18/20251105183707-90FOGSKI.js"
+      defer
+    ></script>
+  </body>
+</html>

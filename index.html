@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bhagya's travel website</title>
+    <link rel="icon" href="flight-takeoff-fill.png">
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">
+            <i class="ri-flight-takeoff-line"></i>
+            <span>JourneyGenius</span>
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#most">POPULAR</a></li>
+        <li><a href="#why">WHY PICK US?</a></li>
+        <li><a href="#tsts">TESTEMONIALS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#" id="mobile-register">REGISTER NOW</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" id="auth-toggle">REGISTER NOW</button>
+      </div>
+    </nav>
+
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>ELEVATE YOUR TRAVEL JOURNEY</p>
+          <h1>Experience The Magic Of Flight!</h1>
+          <div class="header__btns">
+            <a href="booking.html" class="btn--booking"><button class="btn">Book A Trip Now</button></a>
+            <a class="video-trigger" data-video-id="F02_MVdAqCk" aria-label="Watch video">
+              <span><i class="ri-play-circle-fill"></i></span>
+            </a>
+            
+            <div class="video-popup" id="videoPopup">
+              <div class="video-content">
+                <span class="close-btn">&times;</span>
+                <iframe id="youtubeFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="header__image">
+          <img
+            src="https://webdesignmastery.github.io/Skywings_17-08-24/assets/header.png"
+            alt="header"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="popular">
+      <h2 class="section__header" id="most">Most Popular!</h2>
+      <p class="section__description">
+        Discover the Most Loved Destinations Around the Globe
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <a>
+            <img src="https://th.bing.com/th/id/R.e78ca08f8fb7b92ef7a6c206e99893fd?rik=mV9bNnL982qu8w&pid=ImgRaw&r=0" alt="destination" class="video-trigger" data-video-id="MhNKRw-t-i8"/>
+          </a>
+          <div class="destination__card__details">
+            <div>
+              <h4>Tradition and Futurism</h4>
+              <p>Dubai, UAE</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <a>
+            <img src="https://s1.1zoom.me/big3/487/Sky_Evening_France_Eiffel_Tower_Paris_From_above_520603_5416x3611.jpg" alt="destination" class="video-trigger" data-video-id="6JAESY0by04"/>
+          </a>
+          <div class="destination__card__details">
+            <div>
+              <h4>The City of Lights</h4>
+              <p>Paris, France</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <a>
+            <img src="https://wallpaperaccess.com/full/2873370.jpg" alt="destination" class="video-trigger" data-video-id="zHcr32gRRCs" />
+          </a>
+          <div class="destination__card__details">
+            <div>
+              <h4>Island of the Gods</h4>
+              <p>Bali, Indonesia</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-popup" id="videoPopup">
+        <div class="video-content">
+          <span class="close-btn">&times;</span>
+          <iframe id="youtubeFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header" id="why">Journey To The Sky Made Simple!</h2>
+      <p class="section__description">
+        Effortless Planning for Your Next Adventure
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Seamless Booking Process</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Easy Reservations, One Click Away</h4>
+            <p>
+              Whether it's booking flights and lodging or organizing activities and transportation, every aspect of your trip is easily accessible—streamlining your travel planning experience.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Tailored Itineraries</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Customized Plans Just for You</h4>
+            <p>
+              Discover travel plans crafted around your unique tastes and passions. Whether you're chasing thrills or craving cultural depth, our customized itineraries make every journey distinctly yours
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Expert Local Insights</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Insider Tips and Recommendations</h4>
+            <p>
+              We provide curated recommendations for dining, sightseeing, and
+              hidden gems, so you can experience each destination like a local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container showcase__container" id="tour">
+      <div class="showcase__image">
+        <img src="https://webdesignmastery.github.io/Skywings_17-08-24/assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4>UNLEASH WANDERLUST WITH JourneyGenius</h4>
+        <p>
+          Embark on a journey like no other with JourneyGenius, where your travel
+          dreams come to life. Our mission is to inspire and facilitate your
+          adventures, whether you seek the vibrant energy of bustling
+          cityscapes, the serene beauty of pristine beaches, or the captivating
+          history of ancient landmarks. At JourneyGenius, we provide expertly curated
+          destinations and personalized itineraries, ensuring that every trip is
+          tailored to your unique preferences. Discover hidden gems, immerse
+          yourself in diverse cultures, and create unforgettable memories that
+          will last a lifetime.
+        </p>
+        <p>
+          With JourneyGenius as your ultimate travel companion, exploring the wonders
+          of the world has never been easier. Our insider tips and local
+          insights give you the tools to navigate new places with confidence and
+          excitement. From the moment you start planning to the day you return
+          home, we are dedicated to making your travel experience seamless and
+          enriching.
+        </p>
+        <div class="showcase__btn">
+          <a href="booking.html"><button class="btn" style="color: aliceblue; border-radius: 10px;">
+            Book A Flight Now
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>10+</h4>
+        <p>Years Experience</p>
+      </div>
+      <div class="banner__card">
+        <h4>12K</h4>
+        <p>Happy Clients</p>
+      </div>
+      <div class="banner__card">
+        <h4>4.8</h4>
+        <p>Overall Ratings</p>
+      </div>
+    </section>
+
+    <section class="section__container discover__container">
+      <h2 class="section__header">Discover The World From Above</h2>
+      <p class="section__description">
+        Experience Breathtaking Views and Unique Perspectives
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-camera-lens-line"></i></span>
+          <h4>Aerial Cityscapes</h4>
+          <p>
+            Witness the architectural marvels and bustling streets from
+            bird's-eye view, offering a unique perspective.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-ship-line"></i></span>
+          <h4>Coastal Wonders</h4>
+          <p>
+            Fly over pristine coastlines and turquoise waters, revealing hidden
+            coves and vibrant coral reefs.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Historic Landmarks</h4>
+          <p>
+            Observe the grandeur of ancient castles and other significant sites
+            in a way that ground tours can't offer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="testemonials">
+      <h2 class="section__header" id="tsts">Loved By Thousands of Travelers</h2>
+      <p class="section__description">
+        Discover the stories of wanderlust and cherished memories through the
+        eyes of our valued clients.
+      </p>
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  JourneyGenius has completely transformed my travel experience. From
+                  finding hidden gems in bustling cities to discovering serene
+                  retreats off the beaten path, every detail was thoughtfully
+                  arranged. I can't recommend JourneyGenius enough for anyone looking
+                  to elevate their travel experience!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="https://webdesignmastery.github.io/Skywings_17-08-24/assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>John Doe</h4>
+                  <h5>Travel Blogger</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  My recent adventure with JourneyGenius was nothing short of
+                  spectacular. The personalized itineraries and recommendations
+                  they provided led me to extraordinary locations that I would
+                  never have found on my own. I'm already planning my next
+                  adventure with them!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="https://webdesignmastery.github.io/Skywings_17-08-24/assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Emily Thompson</h4>
+                  <h5>Adventure Enthusiast</h5>
+                </div>
+              </div>
+            </div>
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  JourneyGenius offered a transformative experience for my research
+                  into historical landmarks. The unique aerial perspectives and
+                  provided a new level of appreciation and insight into the
+                  sites I studied. I highly recommend their services to fellow
+                  historians and cultural enthusiasts.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="https://webdesignmastery.github.io/Skywings_17-08-24/assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Leah Kim</h4>
+                  <h5>Cultural Historian</h5>
+                </div>
+              </div>
+            </div>
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Finding a balance between work and travel can be challenging,
+                  but JourneyGenius made it effortless. Their efficient planning and
+                  excellent recommendations helped me maximize my downtime and
+                  enjoy every moment of my trip. I look forward to working with
+                  them again on future travels.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="https://webdesignmastery.github.io/Skywings_17-08-24/assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>David Patel</h4>
+                  <h5>Business Executive</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">
+              <i class="ri-flight-takeoff-line"></i>
+              <span>JourneyGenius</span>
+            </a>
+          </div>
+          <p>
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 id="contact">Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> 647-777-7777
+              </a>
+            </li>
+            <li>
+              <a href="https://workspace.google.com/intl/en-US/gmail/">
+                <span><i class="ri-record-mail-line"></i></span> info@JourneyGenius.com
+              </a>
+            </li>
+            <li>
+              <a href="https://www.bing.com/maps/search?mepi=0%7E%7EEmbedded%7ELargeMapLink&ty=18&vdpid=5479462615786717185&v=2&sV=1&FORM=MIRE&q=Scarborough%2C+Ontario&ss=id.sid%3A2280b96c-de6e-c16c-74df-69ea4ba99fa1&mb=43.85548%7E-79.341286%7E43.483856%7E-78.905807&ppois=43.669668197631836_-79.1235466003418_Scarborough%2C+Ontario_%7E&cp=43.695420%7E-79.155011&lvl=11.1&style=r">
+                <span><i class="ri-map-pin-2-fill"></i></span> Scarborough, ON
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" required />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div>© 2025 JourneyGenius. All rights reserved.</div>
+        <div>Created by Bhagya Patel</div>
+      </div>
+    </footer>
+    <body>
+
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="youtubePlayer" width="560" height="315"
+        src=""
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+
+  
+  
+  <div class="auth-wrapper" id="auth-wrapper">
+    <div class="auth-panel auth-signup">
+      <form action="#">
+        <h1>Create Account</h1>
+        <div class="auth-socials">
+          <a href="#" class="auth-icon"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="auth-icon"><i class="ri-google-fill"></i></i></a>
+          <a href="#" class="auth-icon"><i class="ri-apple-fill"></i></a>
+        </div>
+        <span>or use your email for registration</span>
+        <input type="text" placeholder="Name" required/>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required/>
+        <button>Sign Up</button>
+      </form>
+    </div>
+    <div class="auth-panel auth-signin">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="auth-socials">
+          <a href="#" class="auth-icon"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="auth-icon"><i class="ri-google-fill"></i></i></a>
+          <a href="#" class="auth-icon"><i class="ri-apple-fill"></i></a>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required/>
+        <a href="#">Forgot your password?</a>
+        <button id="sgnauth">Sign In</button>
+      </form>
+    </div>
+    <div class="auth-overlay-wrapper">
+      <div class="auth-overlay">
+        <div class="auth-overlay-panel auth-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="auth-signin-btn">Sign In</button>
+        </div>
+        <div class="auth-overlay-panel auth-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start your journey with us</p>
+          <button class="ghost" id="auth-signup-btn">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-backdrop" id="auth-backdrop"></div>
+  <div class="auth-wrapper" id="auth-wrapper">
+    <button class="auth-close-btn" id="auth-close">&times;</button>
+  </div>
+
+
+
+  <script>
+  const menuBtn = document.getElementById("menu-btn");
+  const navLinks = document.getElementById("nav-links");
+
+  if (menuBtn && navLinks) {
+    const menuBtnIcon = menuBtn.querySelector("i");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      const isOpen = navLinks.classList.contains("open");
+      menuBtnIcon.setAttribute(
+        "class",
+        isOpen ? "ri-close-line" : "ri-menu-line"
+      );
+    });
+
+    navLinks.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuBtnIcon.setAttribute("class", "ri-menu-line");
+    });
+  }
+  </script>
+
+  
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/11/05/18/20251105183707-90FOGSKI.js" defer></script>
+    
+  
+
+
+
+
+
+
+  <script src="main.js"></script>
+  </body>
+</html>
